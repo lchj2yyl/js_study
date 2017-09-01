@@ -1,0 +1,73 @@
+js 变量声明
+类型
+number
+string
+boolean
+undefined 声明但是没有初始化 
+null 
+
+复合类型
+object
+
+
+闭包
+定义：闭包是可以访问其所在作用域的函数
+
+var n = 0;
+
+function fun() {
+	console.log(n)
+}
+
+fun()
+
+作用域
+全局作用域：申明的变量没有痛过var 声明则为全局变量
+
+局部变量：通过var声明的变量
+
+作用域链：由里及外传递
+
+this
+javascript 中的this指向的函数的调用者
+
+example1
+
+var name = 'this is object'
+
+var test_object = {
+	name : 'this is function'
+	getName : function() {
+		return function() {
+			return this.name
+		}
+	}
+}
+
+test_object.getName()() // this.is.object
+
+
+example2
+
+var name = 'this is object'
+var test_object = {
+	name : 'this is function'
+	getName : function() {
+		vat that = this
+		retrun function() {
+			return that.name
+		}
+	}
+}
+
+test_object.getName()() // this is function
+
+
+
+
+
+
+
+
+
+
