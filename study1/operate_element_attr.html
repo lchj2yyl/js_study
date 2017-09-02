@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Operate Element Attr</title>
+</head>
+<body>
+
+<input type="text" name="setAttr" id="input1" value="fontSize">
+<input type="text" name="setnum" id="input2" value="60px">
+<a href="http://www.baidu.com" id="link1">百度一下</a>
+<script type="text/javascript">
+	window.onload = function() {
+		var font_size_attr_element = document.getElementById("input1");
+		var font_size_value_element = document.getElementById("input2");
+		var link_element = document.getElementById("link1");
+
+		var font_size_attr = font_size_attr_element.value;
+		var font_size_value = font_size_value_element.value;
+		alert("attr : " + font_size_attr + "  value : " + font_size_value);
+		link_element.style[font_size_attr] = font_size_value;
+		alert(link_element.href);
+	}
+</script>
+</body>
+</html>

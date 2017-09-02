@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>variable</title>
+	<div id="div1">this is a div element </div>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+/*
+多行注释
+*/
+	var iNum = 123;
+	var sTr = 'abc123'
+	function fnAlert() {
+		// body...
+		alert(sTr)
+	};
+	fnAlert();
+</script>
+</html>

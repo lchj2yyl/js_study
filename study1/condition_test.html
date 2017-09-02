@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TEST</title>
+</head>
+<body>
+
+<input type="text" name="num1" id="num1" value="3">
+<select id="select1">
+	<option value="0">+</option>
+	<option value="1" selected="selected">-</option>
+	<option value="2">*</option>
+	<option value="3">/</option>
+</select>
+<input type="text" name="num2" id='num2' value="4">
+<button id="btn1">aculate</button>
+<input type="type" name="" id="result">
+<script type="text/javascript">
+	function cal() {
+		var num1Element = document.getElementById("num1");
+		var num2Element = document.getElementById("num2");
+		var selectElement = document.getElementById("select1");
+		var result = document.getElementById("result");
+		var selectedIndex = selectElement.selectedIndex;
+		var selectValue = selectElement.options[selectedIndex].value;
+		var cal_result = 0;
+		if (selectValue == 0) {
+			cal_result = num1Element.value + num2Element.value;
+		}
+		else if (selectValue == 1) {
+			cal_result = num1Element.value - num2Element.value;
+		}
+		else if (selectValue == 2) {
+			cal_result = num1Element.value * num2Element.value;
+		}
+		else if (selectValue == 3) {
+			cal_result = num1Element.value / num2Element.value;
+		}
+		alert(cal_result)
+		result.value = cal_result
+
+	};
+	var btn = document.getElementById('btn1');
+	btn.onclick = cal;
+</script>
+</body>
+</html>

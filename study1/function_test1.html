@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FUNCTION TEST ONE</title>
+</head>
+<body>
+<button id="btn1">BUTTON ONE</button>
+</body>
+<script type="text/javascript">
+	window.onload = function() {
+		function myAlert() {
+			// body...
+			alert("BTTON_ONE");
+		};
+		var btn1 = document.getElementById("btn1")
+		btn1.onclick = myAlert;
+
+		btn1.onclick = function() {
+			alert("BTTON_ONE_ONE");
+		}
+	}
+</script>
+</html>

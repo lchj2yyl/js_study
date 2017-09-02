@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insert A HTML</title>
+	<dir id="div1">This is a div</dir>
+</head>
+<script type="text/javascript">
+	window.onload = function() {
+		var aDiv = document.getElementById("div1");
+		var aDivInnerHtml = aDiv.innerHTML;
+		alert(aDivInnerHtml)
+		aDiv.innerHTML = '<a href="www.google.com">GOOGLE</a>'
+	}
+</script>
+<body>
+
+</body>
+</html>

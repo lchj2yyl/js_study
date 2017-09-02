@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+	// var element = document.getElementById('div1')
+	// alert(element.id)
+	alert('script 1')
+</script>
+<script type="text/javascript">
+	window.onload = function() {
+		// body...
+		var div1 = document.getElementById('div1')
+		alert('script 3')
+	}
+</script>
+
+<script type="text/javascript">
+	window.onload = function() {
+		var div2 = document.getElementById('div2')
+		alert('script 4')
+	}
+</script>
+<head>
+	<title>Get Element Test</title>
+	<div id="div1">this is a div element for test</div>
+</head>
+<script type="text/javascript">
+	var div1 = document.getElementById('div1')
+	alert('script 2')
+</script>
+<body>
+
+</body>
+</html>
