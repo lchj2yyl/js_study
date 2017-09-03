@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>封闭函数</title>
+</head>
+<body>
+<script type="text/javascript">
+	var num1 = 'num1'
+	function myAlert() {
+		alert('outer alert function')
+	}
+	function testCloseFunction() {
+		function myAlert() {
+			alert("inner alert function")
+		}
+		myAlert()
+	}
+	testCloseFunction()
+</script>
+</body>
+</html>

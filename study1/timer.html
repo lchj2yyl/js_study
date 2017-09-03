@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function myAlert() {
+		alert("ok")
+	}
+
+	var time1 = setTimeout(myAlert, 2000)
+	var time2 = setInterval(myAlert, 2000)
+
+	clearTimeout(time1)
+	clearInterval(time2)
+</script>
+</body>
+</html>

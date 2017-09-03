@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Size</title>
+</head>
+<body>
+<script type="text/javascript" src="jquery-1.12.4.js"></script>
+<script type="text/javascript">
+	$(function(){
+		alert($(window).height())
+		alert($(document).height())
+		alert($('#div1').height())
+		$(window).scroll(function() {
+			alert('window scroll')
+		})
+		$(document).scroll(function() {
+			alert('document scroll')
+		})
+		alert($(document).scrollTop())
+	})
+</script>
+<style type="text/css">
+	.div_style {
+		height: 300px;
+		margin-top: 1000px;
+	}
+</style>
+<div id="div1" class="div_style">this is a div</div>
+</body>
+</html>

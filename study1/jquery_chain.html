@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Chain</title>
+</head>
+<body>
+<script type="text/javascript" src="jquery-1.12.4.js"></script>
+
+<div id="div1">
+	<ul>
+		<li>this is a li 1</li>
+		<li>this is a li 1</li>
+		<li>this is a li 1</li>
+		<li>this is a li 1</li>
+		<li>this is a li 1</li>
+	</ul>
+</div>
+<div id="div2">
+	<ul>
+		<li>this is a li 2</li>
+		<li>this is a li 2</li>
+		<li>this is a li 2</li>
+		<li>this is a li 2</li>
+		<li>this is a li 2</li>
+	</ul>
+</div>
+<script type="text/javascript">
+	$('#div1')
+	.children('ul')
+	.slideDown('slow')
+	.slideUp('slow')
+	.parent()
+	.siblings()
+	.children('ul')
+	.slideUp('slow')
+	.slideDown('slow')
+</script>
+</body>
+</html>

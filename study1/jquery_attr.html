@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Attr</title>
+</head>
+<body>
+<script type="text/javascript" src="jquery-1.12.4.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#btn').click(function() {
+			$('#div').html("this is a div after changed")
+			$('#img1').prop({'src': 'changed.jpg'})
+			alert($('#img1').prop('src'))
+		})
+		alert($('#img1').prop('src'))
+	})
+</script>
+<button id="btn">change</button>
+<div id="div">
+	this is a div
+</div>
+<img id='img1' src="test.jpg">
+</body>
+</html>

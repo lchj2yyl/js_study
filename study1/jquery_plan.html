@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Plan</title>
+</head>
+<body>
+<script type="text/javascript" src='jquery-1.12.4.js'></script>
+<script type="text/javascript">
+	$(function() {
+		$('#plan_btn').click(function() {
+			var plan = $('#plan_input').prop('value')
+			$('#ul').append($('<li>' + plan + '</li>'))
+			$('#plan_input').prop({'value':''})
+			$('#plan_input').focus()
+		})
+	});
+</script>
+<input id='plan_input' type="text" name="plan">
+<button id="plan_btn">ok</button>
+<div id='plan_div'>
+	<ul id='ul'></ul>
+</div>
+</body>
+</html>

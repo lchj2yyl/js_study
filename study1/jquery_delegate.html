@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Delegate</title>
+</head>
+<body>
+<script type="text/javascript" src="jquery-1.12.4.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('.list li').click(function() {
+			$(this).css({'background-color':'red'})
+			alert('red click')
+		})
+
+		$('.list').delegate('li', 'click', function() {
+			$(this).css({'background-color':'red'})
+			alert('red delegate')
+		})
+	})
+</script>
+<ul class="list">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+</ul>
+</body>
+</html>

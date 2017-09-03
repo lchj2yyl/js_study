@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>考研剩余时间</title>
+</head>
+<body>
+<style>
+.center {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  width:100%;
+  height: 100%;
+-webkit-transform: translateX(-50%) translateY(-50%);
+}
+</style>
+<script type="text/javascript" src="jquery-1.12.4.js"></script>
+<dir class="center"  style="font-size: 40px ">
+	<h1 align="center">考研倒计时</h1>
+	<h2 id = 'div1' align="center"></h2>
+	<h2 align="center">继续加油哦</h2>
+</dir>
+<script type="text/javascript">
+	function timeleft() {
+		var now = new Date()
+		var future = new Date(2017,12,23,24,0,0)
+		var lefts = parseInt((future - now)/1000)
+		var day = parseInt(lefts/86400)
+		var hour = parseInt(lefts%86400/3600)
+		var min = parseInt(lefts%86400%3600/60)
+		var sec = lefts%60
+		var timeStr = day + '天' + hour + '时' + min + '分' + sec + '秒'
+		var oDiv = document.getElementById('div1')
+		oDiv.innerHTML = timeStr
+	}
+	timeleft()
+	setInterval(timeleft, 1000)
+</script>
+</body>
+</html>

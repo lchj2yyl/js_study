@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Loop</title>
+</head>
+<body>
+<script type="text/javascript" src="jquery-1.12.4.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('.list li').each(function(i) {
+			$(this).html('this is ' + i + ' item')
+		})
+	})
+</script>
+<ul class="list">
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+</body>
+</html>

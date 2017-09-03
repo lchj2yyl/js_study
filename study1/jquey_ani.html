@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Animation</title>
+</head>
+<body>
+<script type="text/javascript" src="jquery-1.12.4.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#div1').fadeIn(5000,'swing',function() {
+			alert('done!')
+		})
+		$('#div1').hide(1000)
+	})
+</script>
+<div id="div1">this is a div</div>
+</body>
+</html>

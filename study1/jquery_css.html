@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery CSS Test</title>
+</head>
+<body>
+<style type="text/css">
+	.div_style {
+		font-size: 40px;
+		width:100px
+		height:1000px;
+		color: white;
+		align: center;
+		background-color: black;
+	}
+</style>
+<div class="div_style">This is div</div>
+<script type="text/javascript" src="jquery-1.12.4.js">
+
+</script>
+<script type="text/javascript">
+	$(function() {
+		$('.div_style').css("font-size", "100px")
+		$('.div_style').css({"background-color": "white", "color": "black"})
+	})
+</script>
+</body>
+</html>
